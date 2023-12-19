@@ -1,0 +1,18 @@
+[package]
+name = "league-web-client"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+fern = { version = "0.6.2", features = ["colored"] }
+log = "0.4.20"
+chrono = "0.4.31"
+http = "1.0.0"
+base64 = "0.21.5"
+tokio = { version = "1.25.0", features = ["rt-multi-thread", "rt", "macros", "sync"] }
+tokio-tungstenite = { version = "0.21.0", features = ["native-tls"] }
+native-tls = "0.2.11"
+futures-util = "0.3.29"
+serde_json = "1.0.108"
+serde = "1.0.193"
+reqwest = { version = "0.11.23", features = ["json", "blocking"] }
